@@ -12,7 +12,7 @@ import utils.Rutinas;
  */
 public class BotonCarta extends JButton {
 
-    static final private ImageIcon IMAGEN_DEFAULT = Rutinas.AjustarImagen("./src/images/Signo.png", 120, 120);
+    static final private ImageIcon IMAGEN_DEFAULT = Rutinas.AjustarImagen("./src/images/Signo.png", 100, 100);
     private ImageIcon imagen;
     private String nombre;
 
