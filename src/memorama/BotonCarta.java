@@ -17,10 +17,12 @@ public class BotonCarta extends JButton {
     private String nombre;
 
     public BotonCarta(ImageIcon imagen, String nombre) {
-        setIcon(IMAGEN_DEFAULT);
         this.imagen = imagen;
         this.nombre = nombre;
+        setIcon(IMAGEN_DEFAULT);
+        setDisabledIcon(imagen);
     }
+    
 
     // Tentativo a quitar
     public ImageIcon getImagen() {
@@ -34,9 +36,8 @@ public class BotonCarta extends JButton {
     public void mostrarCarta() {
 //        setIcon(imagen);
         setEnabled(false);
-        setDisabledIcon(imagen);
     }
-    
+
     public void ocultarCarta() {
         setIcon(IMAGEN_DEFAULT);
         setEnabled(true);

@@ -8,10 +8,8 @@ package memorama;
 import utils.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.util.Random;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.sound.sampled.AudioSystem;
+import java.util.*;
+import java.util.logging.*;
 import javax.swing.*;
 
 /**
@@ -86,36 +84,7 @@ public class TableroMemorama extends JFrame implements ActionListener {
         ImageIcon imagenCarta;
         BotonCarta botonCarta;
 
-//<editor-fold defaultstate="collapsed" desc="TODO: Añadir todos los personajes y añadir de forma aleatoria en las cartas">
-//        int index;
-//        for (int i = 0; i < numeroCartas; i++) {
-////            index = new Random().nextInt((cartasMemorama.length - 1) + 0);
-//            nombreArchivo = "./src/images/" + CARTAS_MEMORAMA[i] + ".png";
-//            imagenCarta = Rutinas.AjustarImagen(nombreArchivo, 100, 100);
-//            botonCarta = new BotonCarta(imagenCarta, CARTAS_MEMORAMA[i]);
-//            botonCarta.addActionListener(this);
-//            cartasMemorama[i] = botonCarta;
-////
-////            botonCarta = new BotonCarta(imagenCarta, CARTAS_MEMORAMA[index]);
-////            botonCarta.addActionListener(this);
-////            cartasMemorama[i + 1] = botonCarta;
-//        }
-//        int indexMemorama = 0;
-//        for (int i = 0; i < (numeroPares - 1); i++) {
-//            indexMemorama = new Random().nextInt((cartasMemorama.length - 1) + 1);
-//            nombreArchivo = "./src/images/" + CARTAS_MEMORAMA[indexMemorama] + ".png";
-//            imagenCarta = Rutinas.AjustarImagen(nombreArchivo, 100, 100);
-//            botonCarta = new BotonCarta(imagenCarta, CARTAS_MEMORAMA[indexMemorama]);
-//            botonCarta.addActionListener(this);
-//            cartasMemorama[i] = botonCarta;
-//
-//            botonCarta = new BotonCarta(imagenCarta, CARTAS_MEMORAMA[indexMemorama]);
-//            botonCarta.addActionListener(this);
-//            cartasMemorama[i+1] = botonCarta;
-//        }
-//</editor-fold>
-        
-// Añadir 2 veces cada uno
+        // Añadir 2 veces cada uno
         int indexMemorama = 0;
         for (int i = 0; i < numeroPares; i++, indexMemorama++) {
             nombreArchivo = "./src/images/" + CARTAS_MEMORAMA[i] + ".png";
