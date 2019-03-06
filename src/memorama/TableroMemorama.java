@@ -87,14 +87,14 @@ public class TableroMemorama extends JFrame implements ActionListener {
         // Añadir 2 veces cada uno
         int indexMemorama = 0;
         for (int i = 0; i < numeroPares; i++, indexMemorama++) {
-            nombreArchivo = "./src/images/" + CARTAS_MEMORAMA[i] + ".png";
+            nombreArchivo = "C:/Users/ADM/Desktop/Memorama/src/images/" + CARTAS_MEMORAMA[i] + ".png";
             imagenCarta = Rutinas.AjustarImagen(nombreArchivo, 100, 100);
             botonCarta = new BotonCarta(imagenCarta, CARTAS_MEMORAMA[i]);
             botonCarta.addActionListener(this);
             cartasMemorama[indexMemorama] = botonCarta;
         }
         for (int i = 0; i < numeroPares; i++, indexMemorama++) {
-            nombreArchivo = "./src/images/" + CARTAS_MEMORAMA[i] + ".png";
+            nombreArchivo = "C:/Users/ADM/Desktop/Memorama/src/images/" + CARTAS_MEMORAMA[i] + ".png";
             imagenCarta = Rutinas.AjustarImagen(nombreArchivo, 100, 100);
             botonCarta = new BotonCarta(imagenCarta, CARTAS_MEMORAMA[i]);
             botonCarta.addActionListener(this);
